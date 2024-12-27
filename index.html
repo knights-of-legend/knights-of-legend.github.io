@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knights of Legend Pixel Art</title>
+    <style>
+        /* EGA 16-color palette */
+        body {
+            background-color: #000;
+            color: #AAA;
+            font-family: 'Press Start 2P', monospace;
+			color: #FFF;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url('pics/background.png'); /* Sostituisci con il percorso dell'immagine */
+            background-size: cover; /* Ridimensiona l'immagine per coprire tutto lo schermo */
+            background-position: center; /* Centra l'immagine */
+            background-attachment: fixed; /* Impedisce lo scroll dell'immagine */            
+        }
+
+		@font-face {
+		  font-family: 'BlackLetter'; /* Nome personalizzato del font */
+		  src: url('fonts/POWER-BLACKLETTER.otf') format('opentype'); /* Percorso del file */
+		}
+
+        h1, h2, h3 {
+            color: #FFF;
+            text-shadow: 2px 2px #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 20px 0;
+        }
+
+        .description {
+			line-height: 1.5;
+            margin: 20px;
+			margin-bottom: 30px;
+			padding: 0px 20px;
+            background-color: #222;
+            border: 3px solid #555;
+			border-color: white;
+			box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 1);					
+        }
+		
+		.description2 {
+		    text-align: center;
+			color: black;
+			line-height: 1.5;
+			padding: 0 60px; 
+            margin: 20px auto;
+			margin-bottom: 30px;		
+		    background-image: url('pics/MISCPICS_1.png'); /* Percorso dell'immagine */
+            background-size: cover; /* Adatta l'immagine al div */
+            background-position: center; /* Centra l'immagine */
+			width: calc(100% - 20%); /* Larghezza ingrandita del 20% */
+            
+		}
+		
+        .description3 {
+            text-align: center;
+			line-height: 1.5;
+            max-width: 1000px;
+            margin: 20px auto;
+			margin-bottom: 30px;
+			color: black;
+            background-color: #FFFF55;
+            border: 3px solid #555;
+			border-color: black;				
+        }		
+
+        .section {
+            margin: 20px;
+			margin-bottom: 30px;
+            padding: 10px;
+            border: 3px solid #444;
+            background-color: #111;
+			border-color: white;
+			box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 1);
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .subsection {
+            margin: 10px 0;
+        }
+
+        .subsection-title {
+            font-size: 0.8rem;
+            margin-bottom: 5px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 10px;
+        }
+
+        .image-grid img {
+            width: 100px;
+            height: auto;
+			object-fit: cover;
+            cursor: pointer;
+        }		
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Knights of Legend Pixel Art</h1>
+
+    <div class="description">
+        <p><b>Knights of Legend</b> is a fantasy role-playing video game released by <i>Origin Systems</i> in 1989. Besides being particularly attached to this game, I believe it has a wonderful pixel art graphics, so I decided to extract the images from the game files and allow everyone to admire them.</p>
+    </div>
+	
+    <div class="section">
+        <div class="section-title">Intro</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Background</div>
+                <img src="pics/BACKPICS.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Face</div>
+                <img src="pics/FACEPICS.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Animation 1</div>
+                <img src="pics/SET0PICS.png" alt="Leg Armor">
+                </div>      
+
+                <div>
+                <div class="subsection-title">Animation 2</div>
+                <img src="pics/SET1PICS.png" alt="Leg Armor">
+                </div>  
+
+                <div>
+                <div class="subsection-title">Animation 3</div>
+                <img src="pics/SET2PICS.png" alt="Leg Armor">
+                </div>  				
+            </div>
+        </div>
+    </div>	
+	
+    <div class="section">
+        <div class="section-title">Book</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Book</div>
+                <img src="pics/BOOKPICS.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Book titles</div>
+                <img src="pics/BOOKPICS_2.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Book icons</div>
+                <img src="pics/BOOKPICS_3.png" alt="Leg Armor">
+                </div>   
+				
+            </div>
+        </div>
+    </div>
+	
+    <div class="section">
+        <div class="section-title">Creatures</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Chars</div>
+                <img src="pics/CHARPICS.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Monsters</div>
+                <img src="pics/MONPICS.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Bodies</div>
+                <img src="pics/PERPICS.png" alt="Leg Armor">
+                </div>   
+
+                <div>
+                <div class="subsection-title">Hands</div>
+                <img src="pics/HANDPICS.png" alt="Leg Armor">
+                </div>   
+				
+                <div>
+                <div class="subsection-title">Horses</div>
+                <img src="pics/STEEDS.png" alt="Leg Armor">
+                </div>   				
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Items</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Head armors</div>
+                <img src="pics/HEADPICS.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Torso armors</div>
+                <img src="pics/TORPICS.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Legs armors</div>
+                <img src="pics/LEGSPICS.png" alt="Leg Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Weapons</div>
+                <img src="pics/WEAPPICS.png" alt="Leg Armor">
+                </div>  
+                
+                <div>
+                <div class="subsection-title">Shields</div>
+                <img src="pics/SHLDPICS.png" alt="Leg Armor">
+                </div>     
+
+                <div>
+                <div class="subsection-title">Misc</div>
+                <img src="pics/AWD1PICS.png" alt="Leg Armor">
+                </div>  				
+            </div>
+        </div>
+    </div>
+	
+    <div class="section">
+        <div class="section-title">Combat</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Outcome</div>
+                <img src="pics/COMBPICS.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Chars</div>
+                <img src="pics/COMBPICS_1.png" alt="Torso Armor">
+                </div>               
+				
+            </div>
+        </div>
+    </div>
+	
+    <div class="section">
+        <div class="section-title">User Interface</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Icons</div>
+                <img src="pics/KOLMPICS.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Wallpaper</div>
+                <img src="pics/KOLMPICS_0.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Bar</div>
+                <img src="pics/KOLMPICS_2.png" alt="Leg Armor">
+                </div>   
+				
+            </div>
+        </div>
+    </div>	
+	
+    <div class="section">
+        <div class="section-title">Misc</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Forest</div>
+                <img src="pics/MISCPICS_0.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Banner</div>
+                <img src="pics/MISCPICS_1.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Bodies</div>
+                <img src="pics/MISCPICS_2.png" alt="Leg Armor">
+                </div>   
+
+                <div>
+                <div class="subsection-title">Weather</div>
+                <img src="pics/WEATPICS.png" alt="Leg Armor">
+                </div>  
+				
+            </div>
+        </div>
+    </div>
+	
+    <div class="section">
+        <div class="section-title">Maps</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">World</div>
+                <img src="pics/world.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Town 1</div>
+                <img src="pics/town1.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Town 2</div>
+                <img src="pics/town2.png" alt="Leg Armor">
+                </div>         
+
+                <div>
+                <div class="subsection-title">Town 3</div>
+                <img src="pics/town3.png" alt="Leg Armor">
+                </div>  
+
+                <div>
+                <div class="subsection-title">Town 4</div>
+                <img src="pics/town4.png" alt="Leg Armor">
+                </div>  
+
+                <div>
+                <div class="subsection-title">Town 5</div>
+                <img src="pics/town5.png" alt="Leg Armor">
+                </div>  
+
+                <div>
+                <div class="subsection-title">Town 6</div>
+                <img src="pics/town6.png" alt="Leg Armor">
+                </div>  				
+				
+                <div>
+                <div class="subsection-title">Town 7</div>
+                <img src="pics/town7.png" alt="Leg Armor">
+                </div>  				
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Town 1</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Coat of arms</div>
+                <img src="pics/TWN1PICS_0.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Chars</div>
+                <img src="pics/TWN1PICS_chars.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Locations</div>
+                <img src="pics/TWN1PICS.png" alt="Leg Armor">
+                </div>                               
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Town 2</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Coat of arms</div>
+                <img src="pics/TWN2PICS_0.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Chars</div>
+                <img src="pics/TWN2PICS_chars.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Locations</div>
+                <img src="pics/TWN2PICS.png" alt="Leg Armor">
+                </div>                               
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Town 3</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Coat of arms</div>
+                <img src="pics/TWN3PICS_0.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Chars</div>
+                <img src="pics/TWN3PICS_chars.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Locations</div>
+                <img src="pics/TWN3PICS.png" alt="Leg Armor">
+                </div>                               
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Town 4</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Coat of arms</div>
+                <img src="pics/TWN4PICS_0.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Chars</div>
+                <img src="pics/TWN4PICS_chars.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Locations</div>
+                <img src="pics/TWN4PICS.png" alt="Leg Armor">
+                </div>                               
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Town 5</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Coat of arms</div>
+                <img src="pics/TWN5PICS_0.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Chars</div>
+                <img src="pics/TWN5PICS_chars.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Locations</div>
+                <img src="pics/TWN5PICS.png" alt="Leg Armor">
+                </div>                               
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Town 6</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Coat of arms</div>
+                <img src="pics/TWN6PICS_0.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Chars</div>
+                <img src="pics/TWN6PICS_chars.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Locations</div>
+                <img src="pics/TWN6PICS.png" alt="Leg Armor">
+                </div>                               
+            </div>
+        </div>
+    </div>
+	
+    <div class="section">
+        <div class="section-title">Town 7</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Coat of arms</div>
+                <img src="pics/TWN7PICS_0.png" alt="Head Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Chars</div>
+                <img src="pics/TWN7PICS_chars.png" alt="Torso Armor">
+                </div>
+                
+                <div>
+                <div class="subsection-title">Locations</div>
+                <img src="pics/TWN7PICS.png" alt="Leg Armor">
+                </div>                               
+            </div>
+        </div>
+    </div>	
+
+    <div class="section">
+        <div class="section-title">Ending</div>
+
+        <div class="subsection">
+            
+            <div class="image-grid">
+                <div>
+                <div class="subsection-title">Story</div>
+                <img src="pics/ENDPICS.png" alt="Head Armor">
+                </div>                              				
+            </div>
+        </div>
+    </div>
+	
+    <div class="modal" id="imageModal">
+        <img src="" alt="Full Image">
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        const modalImage = modal.querySelector('img');
+
+        document.querySelectorAll('.image-grid img').forEach(img => {
+            img.addEventListener('click', () => {
+                modalImage.src = img.src;
+                modal.style.display = 'flex';
+            });
+        });
+
+        modal.addEventListener('click', () => {
+            modal.style.display = 'none';
+            modalImage.src = '';
+        });
+    </script>
+</body>
+</html>
